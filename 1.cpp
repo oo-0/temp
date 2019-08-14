@@ -1,10 +1,10 @@
 #include <iostream.h>
 using namespace std;
-void add(int,int);
-void sub();
+int add(int,int);
+int sub(int,int);
 int main(){
 	int i;
-	cout<<"Enter 1 for addition ";
+	cout<<"Enter 1 for addition , for substraction press any other number	";
 	cin>>i;
 	int a,b;
 	if(i==1){
@@ -13,11 +13,16 @@ int main(){
 		add(a,b);
 	}
 	else{
-		
+		cout<<"Enter the numbers "<<endl;
+		cin>>a>>b;
+		sub(a,b);
 	}
 	return 0;
 }
 
-void add(int a,int b){
+int add(int a,int b){
 return a+b;
+}
+int sub(int a,int b){
+return a-b;
 }
